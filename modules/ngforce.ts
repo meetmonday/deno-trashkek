@@ -1,9 +1,18 @@
 import type { Context } from "npm:telegraf";
 
-export default function main(ctx: Context) {
-  if(ctx.chat?.type === 'private') {
-    ctx.reply('Долбоеб, это не чят');
+function main(ctx: Context) {
+  if (ctx.chat?.type === "private") {
+    ctx.reply("Долбоеб, это не чят");
     return false;
   }
-  ctx.reply('Это чят')
+  ctx.reply("Это чят");
 }
+
+export default {
+  description: "НГФОРС или СЛУЧАЙНЫЙ КАМЕНТ С ТРЕШБОКСА",
+  trigger: {
+    type: "command",
+    string: "ngforce",
+  },
+  exec: main,
+};

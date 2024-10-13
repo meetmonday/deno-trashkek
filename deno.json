@@ -1,6 +1,7 @@
 {
   "tasks": {
-    "dev": "deno run --watch --allow-all --env main.ts"
+    "dev": "deno run --watch --allow-all --env main.ts",
+    "generate": "deno run --allow-all --env ./lib/generateBot.ts"
   },
   "imports": {
     "@std/assert": "jsr:@std/assert@1",
