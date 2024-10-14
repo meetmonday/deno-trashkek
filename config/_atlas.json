@@ -1,0 +1,13 @@
+[
+  { "enabled": true, "import": "help" },
+  { "enabled": true, "import": "ngforce" },
+  { "enabled": true, "import": "hentai" },
+  { "enabled": true, "import": "trashkek" },
+  { "enabled": true, "import": "tiktok" },
+  { "enabled": true, "import": "when" },
+  {
+    "enabled": true,
+    "import": ["join", "joined"],
+    "from": "#m/bratan/_index.ts"
+  }
+]

@@ -1,10 +1,13 @@
 {
   "tasks": {
-    "dev": "deno run --watch --allow-all --env main.ts",
-    "generate": "deno run --allow-all --env ./lib/generateBot.ts"
+    "dev": "deno run --watch --allow-all --env ./src/main.ts",
+    "generate": "deno run --allow-all --env ./lib/generateAtlas.ts",
+    "createModule": "deno run --allow-all --env ./lib/moduleCreator.ts"
   },
   "imports": {
     "@std/assert": "jsr:@std/assert@1",
-    "#m/": "./modules/"
+    "#m/": "./src/modules/",
+    "@atlas": "./src/_atlas.ts",
+    "@rawAtlas": "./build/_atlas.json"
   }
 }

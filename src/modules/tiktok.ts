@@ -16,7 +16,7 @@ async function main(ctx: Context) {
 }
 
 export default {
-  description: "загрузить ебучий тикток",
-  trigger: { type: "regex", string: /tiktok/, readable: 'tiktok.com/' },
+  description: "загрузить видос с тиктока",
+  trigger: { type: "regex", string: /tiktok/, readable: "tiktok.com/" },
   exec: main,
 };
