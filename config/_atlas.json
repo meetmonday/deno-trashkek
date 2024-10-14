@@ -1,7 +1,7 @@
 [
   { "enabled": true, "import": "help" },
   { "enabled": true, "import": "ngforce" },
-  { "enabled": true, "import": "hentai" },
+  { "enabled": true, "import": "hentai", "from": "#m/hentai/search.ts" },
   { "enabled": true, "import": "trashkek" },
   { "enabled": true, "import": "tiktok" },
   { "enabled": true, "import": "when" },

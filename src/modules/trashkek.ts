@@ -6,6 +6,6 @@ function main(ctx: Context) {
 
 export default {
   description: "кинуть крутой камент с крутого сайта трешбокс",
-  trigger: { type: "regex", string: /#div_comment/, readable: "trashbox.ru/" },
+  trigger: { type: "regex", string: /#div_comment/, readable: "trashbox.ru" },
   exec: main,
 };

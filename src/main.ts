@@ -2,7 +2,6 @@ import { Telegraf } from "npm:telegraf";
 
 import modules from "@atlas";
 const bot = new Telegraf(Deno.env.get("BOT_TOKEN")!);
-// const enabledModules = Deno.env.get("MODULES")?.split(" ") || [];
 
 if (import.meta.main) {
   Object.entries(modules).forEach((a) => {
